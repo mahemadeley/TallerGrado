@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categoria: 
+  marca: one
+  nombre: MyString
+  precio: 1.5
+  stock: 1
+  vencimiento: 2017-06-17
+  produccion: 2017-06-17
+
+two:
+  categoria: 
+  marca: two
+  nombre: MyString
+  precio: 1.5
+  stock: 1
+  vencimiento: 2017-06-17
+  produccion: 2017-06-17
