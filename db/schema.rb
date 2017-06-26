@@ -71,11 +71,11 @@ ActiveRecord::Schema.define(version: 20170617192012) do
 
   create_table "compras", force: :cascade do |t|
     t.bigint "cliente_id"
-    t.string "pago"
-    t.string "references"
+    t.bigint "pago_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cliente_id"], name: "index_compras_on_cliente_id"
+    t.index ["pago_id"], name: "index_compras_on_pago_id"
   end
 
   create_table "creditos", force: :cascade do |t|
@@ -152,6 +152,7 @@ ActiveRecord::Schema.define(version: 20170617192012) do
   end
 
   add_foreign_key "compras", "clientes"
+  add_foreign_key "compras", "pagos"
   add_foreign_key "detalle_compras", "compras"
   add_foreign_key "detalle_compras", "productos"
   add_foreign_key "detalle_creditos", "clientes"
