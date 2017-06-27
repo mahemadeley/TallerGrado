@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'shop#index'
   
-  get 'client/nuevo' => 'client#new'
-  post 'cliente/crear' => 'cliente#create'
+  get 'tienda/login' => 'client#new'
+  post 'tienda/sesion/ingresar' => 'cliente#create'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

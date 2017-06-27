@@ -1,10 +1,12 @@
 class ClientController < ApplicationController
+  layout 'login'
+
   def new
-    @client = Client.new
+    #@client = Cliente.new
   end
 
   def create
-    @client = Client.new(set_params)
+    @client = Cliente.new(set_params)
   end
 
   private
