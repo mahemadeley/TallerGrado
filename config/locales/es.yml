@@ -140,3 +140,8 @@ es:
       block: "Lista"
       grid: "Grilla"
       blog: "Blog"
+
+
+  time:
+    formats:
+      long: "%d-%m-%Y %H:%M:%S"
